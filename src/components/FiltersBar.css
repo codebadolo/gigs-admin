@@ -1,0 +1,42 @@
+.filtersBar {
+  margin-top: 80px; /* pour laisser la place à la top bar */
+  background-color: #f5f8fa;
+  padding: 16px 24px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  font-size: 0.95rem;
+  color: #34495e;
+}
+
+.filterGroup label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.filterGroup select,
+.filterGroup input {
+  padding: 8px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.filterGroup select:focus,
+.filterGroup input:focus {
+  outline: none;
+  border-color: #2980b9;
+  box-shadow: 0 0 6px #2980b9;
+}

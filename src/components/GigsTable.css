@@ -1,0 +1,106 @@
+.gigsTable {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  color: #222;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gigsTable thead tr {
+  background-color: #004080;
+  color: white;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.gigsTable th,
+.gigsTable td {
+  padding: 16px 20px;
+  text-align: left;
+  vertical-align: middle;
+  user-select: none;
+}
+
+.gigsTable th {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-bottom: 3px solid #003366;
+}
+
+.gigsTable th:hover {
+  background-color: #0059b3;
+}
+
+.gigsTable tbody tr {
+  background-color: #fefefe;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  border-radius: 12px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gigsTable tbody tr:hover {
+  background-color: #e6f0ff;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+.gigThumbnail {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.gigThumbnail:hover {
+  transform: scale(1.05);
+}
+
+.noImage {
+  width: 100px;
+  height: 70px;
+  background-color: #ddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.tableRow {
+  transition: background-color 0.2s ease;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .gigsTable {
+    font-size: 1rem;
+  }
+  .gigThumbnail {
+    width: 80px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gigsTable {
+    font-size: 0.9rem;
+  }
+  .gigThumbnail {
+    width: 60px;
+    height: 40px;
+  }
+  .gigsTable th,
+  .gigsTable td {
+    padding: 10px 12px;
+  }
+}

@@ -1,0 +1,69 @@
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 240px; /* ajustez selon sidebar */
+  right: 0;
+  height: 60px;
+  background-color: #003366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.topBar.collapsed {
+  left: 80px; /* ajustez selon sidebar réduit */
+}
+
+.topBarTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Conteneur des boutons */
+.topBarButtons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Styles des boutons */
+.topBarBtn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.topBarBtn:hover,
+.topBarBtn:focus {
+  background-color: rgba(255,255,255,0.2);
+  outline: none;
+}
+
+/* Bouton profil avec avatar */
+.profileBtn {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

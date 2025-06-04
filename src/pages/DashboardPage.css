@@ -1,0 +1,9 @@
+.dashboardPage {
+  padding: 20px;
+}
+
+.dashboardCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
