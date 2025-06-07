@@ -26,7 +26,7 @@ body {
 }
 
 .gigsPageContainer.collapsed {
-  margin-left: 80px; /* sidebar réduit */
+  margin-left: 0px; /* sidebar réduit */
 }
 
 

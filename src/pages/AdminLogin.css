@@ -1,0 +1,78 @@
+/* Container centré avec ombre et arrondis */
+.loginContainer {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Titre */
+.loginContainer h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #004080;
+  font-size: 1.8rem;
+}
+
+/* Formulaire */
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Champs input */
+.loginForm input {
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.loginForm input:focus {
+  border-color: #004080;
+  outline: none;
+}
+
+/* Bouton */
+.loginForm button {
+  padding: 14px 16px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginForm button:hover:not(:disabled) {
+  background-color: #0066cc;
+}
+
+.loginForm button:disabled {
+  background-color: #7a9cd9;
+  cursor: not-allowed;
+}
+
+/* Message d’erreur */
+.errorMsg {
+  color: #d7263d;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+  .loginContainer {
+    margin: 50px 20px;
+    padding: 30px 20px;
+  }
+}
